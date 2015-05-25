@@ -14,11 +14,7 @@ public class MealBinderMain {
 	
 	public static void main(String[] args) {
 		
-		  String current = System.getProperty("user.dir");
-	        System.out.println("Current working directory in Java : " + current);
-	      
-
-		// create JAXB context and instantiate marshaller
+ 		// create JAXB context and instantiate marshaller
 		try {
 			JAXBContext context = JAXBContext.newInstance(DietPlan.class);
 			Unmarshaller um = context.createUnmarshaller();
